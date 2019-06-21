@@ -7,6 +7,7 @@ module.exports = {
   entryPointSrc: path.resolve(projectRoot, 'src/app.tsx'),
   typescriptConfigSrc: path.resolve(projectRoot, 'tsconfig.json'),
   htmlTemplateSrc: path.resolve(projectRoot, 'src/index.html'),
+  swSrc: path.resolve(projectRoot, 'src/services/service-worker/main.ts'),
   // Directories
   srcDir: path.resolve(projectRoot, 'src'),
   distDir: path.resolve(projectRoot, 'dist'),

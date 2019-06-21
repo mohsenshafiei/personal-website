@@ -2,9 +2,11 @@ import * as React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { PrivateRoute } from './private-route';
-import { Login } from 'ui/pages/login';
-import { Logout } from 'ui/pages/logout';
+import { Home } from 'ui/pages/home';
+import { Blog } from 'ui/pages/blog';
+import { Biography } from 'ui/pages/biography';
 import { NotFound } from 'ui/pages/not-found';
+import { Header } from 'ui/components/header';
 
 interface RouteObject {
   path: string;
@@ -14,19 +16,24 @@ interface RouteObject {
 
 const routes: RouteObject[] = [
   {
-    path: '/logout',
-    component: Logout,
+    path: '/',
+    component: Home,
     isPrivate: false,
   },
   {
-    path: '/',
-    component: Login,
+    path: '/blog',
+    component: Blog,
+    isPrivate: false,
+  },
+  {
+    path: '/biography',
+    component: Biography,
     isPrivate: false,
   },
   {
     path: '*',
     component: NotFound,
-    isPrivate: true,
+    isPrivate: false,
   },
 ];
 
@@ -42,6 +49,7 @@ export class RouterDumb extends React.Component<RouterProps, {}> {
   render() {
     return (
       <BrowserRouter>
+        <Header />
         <Switch>
           {
             routes.map((route, index) => {
