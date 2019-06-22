@@ -1,0 +1,26 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  text-align: left;
+  padding: 1em;
+  -webkit-box-shadow: 0 4px 2px -3px #999;
+  -moz-box-shadow: 0 4px 2px -3px #999;
+  box-shadow: 0 4px 2px -3px #999;
+  z-index: 10;
+}
+
+.wlink {
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+  font-family: Cocogoose;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
