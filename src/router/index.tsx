@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { PrivateRoute } from './private-route';
 import { Home } from 'ui/pages/home';
 import { Blog } from 'ui/pages/blog';
+import { Post } from 'ui/pages/post';
 import { Biography } from 'ui/pages/biography';
 import { NotFound } from 'ui/pages/not-found';
 import { Header } from 'ui/components/header';
@@ -31,6 +32,11 @@ const routes: RouteObject[] = [
     isPrivate: false,
   },
   {
+    path: '/post',
+    component: Post,
+    isPrivate: false,
+  },
+  {
     path: '*',
     component: NotFound,
     isPrivate: false,
@@ -48,7 +54,7 @@ export class RouterDumb extends React.Component<RouterProps, {}> {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Switch>
           {
@@ -69,7 +75,7 @@ export class RouterDumb extends React.Component<RouterProps, {}> {
             })
           }
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
