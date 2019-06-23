@@ -2,8 +2,15 @@ import {
   ActionType,
   SelectPostAction,
   SelectPostFulfilledAction,
+  StartBlogAction,
 } from './action-type';
 import { PostInterface } from './model';
+
+export const startBlog = (): StartBlogAction => (
+  {
+    type: ActionType.START_BLOG,
+  }
+);
 
 export const selectPostAction = (post: PostInterface): SelectPostAction => (
   {

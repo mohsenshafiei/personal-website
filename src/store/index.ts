@@ -2,16 +2,19 @@ import { createStore, combineReducers, Store, compose, applyMiddleware } from 'r
 import createSagaMiddleware from 'redux-saga';
 import { reducer as userReducer, UserState } from 'store/user/reducer';
 import { reducer as blogReducer, BlogState } from 'store/blog/reducer';
+import { reducer as biographyReducer, BiographyState } from 'store/biography/reducer';
 import { sagas } from './sagas';
 
 export interface State {
   user: UserState;
   blog: BlogState;
+  biography: BiographyState;
 }
 
 const reducers = combineReducers({
   user: userReducer,
   blog: blogReducer,
+  biography: biographyReducer,
 });
 
 const sagaMiddleware = createSagaMiddleware();
