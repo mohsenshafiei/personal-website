@@ -4,6 +4,6 @@ export interface PostInterface {
   author: string;
   time: string;
   date: string;
-  content: string;
+  content: string[];
   link: string;,
 }

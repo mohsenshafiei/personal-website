@@ -30,6 +30,7 @@ export class Post extends React.Component<PostProps, PostState> {
           title={this.props.post.title}
           author={this.props.post.author}
           time={this.props.post.time}
+          date={this.props.post.date}
         />
       </div>
     );

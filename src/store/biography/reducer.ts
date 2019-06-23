@@ -13,7 +13,7 @@ const userInitialState: BiographyState = {
     author: '',
     time: '',
     date: '',
-    content: '',
+    content: [''],
     link: '',
   },
 }
