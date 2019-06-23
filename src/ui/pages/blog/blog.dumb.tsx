@@ -28,7 +28,7 @@ export class Blog extends React.Component<BlogProps, BlogState> {
             return(
               <div onClick={() => this.props.selectPost(post)} key={index}>
                 <BlogPost
-                  link={''}
+                  link={'/post'}
                   title={post.title}
                   description={post.description}
                   time={post.time}

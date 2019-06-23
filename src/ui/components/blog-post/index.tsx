@@ -13,7 +13,7 @@ interface Props {
 export const BlogPost: React.FunctionComponent<Props> = props => {
   return (
     <div className={style.wrapper}>
-      <NavLink to={`/post/${props.link}`} className={style.link}>{props.title}</NavLink>
+      <NavLink to={props.link} className={style.link}>{props.title}</NavLink>
       <p className={style.description}>{props.description}</p>
       <p className={style.info}>{props.date} | {props.time}</p>
     </div>
