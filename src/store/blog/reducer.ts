@@ -13,7 +13,7 @@ const userInitialState: BlogState = {
     author: '',
     time: '',
     date: '',
-    content: '',
+    content: [''],
     link: '',
   },
 }

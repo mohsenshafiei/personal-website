@@ -31,6 +31,7 @@ export class Story extends React.Component<StoryProps, StoryState> {
           title={this.props.post.title}
           author={this.props.post.author}
           time={this.props.post.time}
+          date={this.props.post.date}
         />
       </div>
     );

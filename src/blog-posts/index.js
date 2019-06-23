@@ -5,8 +5,8 @@ export const posts = [
     author: 'Mohsen Shafiei Tafreshi',
     time: '6 Minutes Reading',
     date: '26 June 2019',
-    content: 'Let\'s review why functional programming is impotant',
-    link: '1',
+    content: ['Let\'s review why functional programming is impotant'],
+    link: '',
   },
   {
     title: 'ES6 Features',
@@ -14,7 +14,7 @@ export const posts = [
     author: 'Mohsen Shafiei Tafreshi',
     time: '6 Minutes Reading',
     date: '26 June 2019',
-    content: 'Let\'s review ES6 features',
-    link: '1',
+    content: ['Let\'s review ES6 features'],
+    link: '',
   },
 ];

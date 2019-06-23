@@ -4,6 +4,6 @@ export interface BiographyInterface {
   author: string;
   time: string;
   date: string;
-  content: string;
+  content: string[];
   link: string;,
 }
