@@ -1,0 +1,43 @@
+.container {
+  position: absolute;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  overflow: hidden;
+  min-width: 320px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  width: 100%;
+  font-family: Cocogoose;
+  margin-bottom: 1em;
+  min-width: 320px;
+  text-align: center;
+}
+
+.info {
+  font-family: Grotters;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.link {
+  font-family: Grotters;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #8B008B;
+  text-align: center;
+}
