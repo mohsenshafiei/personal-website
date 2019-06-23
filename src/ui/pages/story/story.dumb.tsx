@@ -1,25 +1,26 @@
 import * as React from 'react';
 import * as style from './style.scss';
 import { Markdown } from 'ui/components/markdown';
-import { PostInterface } from 'store/blog/model';
-interface PostProps {
-  post: PostInterface;
-  startBlog: () => {};
+import { BiographyInterface } from 'store/biography/model';
+
+interface StoryProps {
+  post: BiographyInterface;
+  startBiography: () => {};
 }
 
-interface PostState {
+interface StoryState {
 }
 
-export class Post extends React.Component<PostProps, PostState> {
-  constructor(props: PostProps) {
+export class Story extends React.Component<StoryProps, StoryState> {
+  constructor(props: StoryProps) {
     super(props);
   }
 
-  readonly state: PostState = {
+  readonly state: StoryState = {
   }
 
   componentDidMount() {
-    this.props.startBlog();
+    this.props.startBiography();
   }
 
   render() {

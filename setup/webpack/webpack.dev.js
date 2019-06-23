@@ -12,7 +12,7 @@ module.exports = merge(common, {
   devServer: {
     compress: true,
     contentBase: pathTo.distDir,
-    port: 8000,
+    port: 8001,
     historyApiFallback: true,
     hot: true,
     open: true,
