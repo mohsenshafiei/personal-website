@@ -1,43 +1,43 @@
 .container {
-  position: absolute;
-  font-size: 16px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1em;
-  overflow: hidden;
-  min-width: 320px;
+  composes: position--absolute from '~styles';
+  composes: font-size--1em from '~styles';
+  composes: top--0 from '~styles';
+  composes: left--0 from '~styles';
+  composes: right--0 from '~styles';
+  composes: bottom--0 from '~styles';
+  composes: padding--1em from '~styles';
+  composes: overflow--hidden from '~styles';
+  composes: min-width--320px from '~styles';
 }
 
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  composes: position--absolute from '~styles';
+  composes: top--50 from '~styles';
+  composes: left--50 from '~styles';
+  composes: transform--translate-50-50 from '~styles';
+  composes: text-align--center from '~styles';
 }
 
 .title {
-  width: 100%;
-  font-family: Cocogoose;
-  margin-bottom: 1em;
-  min-width: 320px;
-  text-align: center;
+  composes: width--100 from '~styles';
+  composes: font-family--cocogoose from '~styles';
+  composes: margin-bottom--1em from '~styles';
+  composes: min-width--320px from '~styles';
+  composes: text-align--center from '~styles';
 }
 
 .info {
-  font-family: Grotters;
-  text-decoration: none;
-  font-size: 1.5em;
-  color: black;
-  text-align: center;
-  margin-bottom: 1em;
+  composes: font-family--grotters from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: font-size--1-5em from '~styles';
+  composes: color--black from '~styles';
+  composes: text-align--center from '~styles';
+  composes: margin-bottom--1em from '~styles';
 }
 .link {
-  font-family: Grotters;
-  text-decoration: none;
-  font-size: 1.5em;
-  color: #8B008B;
-  text-align: center;
+  composes: font-family--grotters from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: font-size--1-5em from '~styles';
+  composes: color--violate from '~styles';
+  composes: text-align--center from '~styles';
 }

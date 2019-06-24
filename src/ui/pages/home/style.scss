@@ -1,59 +1,60 @@
 .container {
-  position: absolute;
-  font-size: 16px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1em;
-  overflow: hidden;
-  min-width: 320px;
+  composes: position--absolute from '~styles';
+  composes: font-size--1em from '~styles';
+  composes: top--0 from '~styles';
+  composes: left--0 from '~styles';
+  composes: right--0 from '~styles';
+  composes: bottom--0 from '~styles';
+  composes: padding--1em from '~styles';
+  composes: overflow--hidden from '~styles';
+  composes: min-width--320px from '~styles';
 }
 
 .avatar {
-  border-radius: 50%;
-  width: 12em;
-  height: 12em;
-  margin-top: 4em;
-  margin-bottom: 2em;
+  composes: border-radius--50 from '~styles';
+  composes: width--12em from '~styles';
+  composes: height--12em from '~styles';
+  composes: margin-top--4em from '~styles';
+  composes: margin-bottom--2em from '~styles';
 }
+
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  composes: position--absolute from '~styles';
+  composes: top--50 from '~styles';
+  composes: left--50 from '~styles';
+  composes: transform--translate-50-50 from '~styles';
+  composes: text-align--center from '~styles';
 }
 
 .title {
-  color: black;
-  font-size: 2em;
+  composes: color--black from '~styles';
+  composes: font-size--2em from '~styles';
+  composes: font-family--cocogoose from '~styles';
+  composes: margin-bottom--0-5em from '~styles';
   @media (max-width: 450px) {
     font-size: 1.2em;
   }
-  font-family: Cocogoose;
-  margin-bottom: 0.5em;
 }
 
 .role {
+  composes: color--black from '~styles';
+  composes: font-family--grotters from '~styles';
   @media (max-width: 450px) {
     font-size: 1.5em;
   }
-  color: black;
-  font-family: Grotters;
 }
 
 .wlink {
-  margin-top: 5em;
+  composes: margin-top--5em from '~styles';
 }
 
 .link {
-  margin: 0 0.3em 0 0.3em;
-  text-decoration: none;
-  color: gray;
-  font-size: 0.9em;
-  font-family: Cocogoose;
-  font-weight: 300;
+  composes: margin--0-0-3em from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: color--gray from '~styles';
+  composes: font-size--0-9em from '~styles';
+  composes: font-family--cocogoose from '~styles';
+  composes: font-weight--300 from '~styles';
   &:hover {
     color: black;
   }

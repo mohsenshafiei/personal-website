@@ -1,10 +1,10 @@
 .container {
-  margin-top: 8em;
-  width: 100%;
-  margin: 8em auto;
-  position: absolute;
-  text-align: center;
-  padding: 0 20%;
+  composes: margin-top--8em from '~styles';
+  composes: width--100 from '~styles';
+  composes: margin--8em-auto from '~styles';
+  composes: position--absolute from '~styles';
+  composes: text-align--center from '~styles';
+  composes: padding--0-20 from '~styles';
   @media (max-width: 960px) {
     padding: 0 5%;
   }
