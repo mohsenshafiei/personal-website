@@ -1,39 +1,39 @@
 .wrapper {
-  margin: 1em;
-  margin-bottom: 2em;
+  composes: margin--1em from '~styles';
+  composes: margin-bottom--2em from '~styles';
 }
 
 .link {
-  text-align: left;
-  display: block;
-  text-decoration: none;
-  color: black;
-  font-family: Lora;
-  font-size: 1.2em;
-  font-weight: 800;
-  line-height: 1.2em;
-  margin-bottom: 0.5em;
+  composes: text-align--left from '~styles';
+  composes: display--block from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: color--black from '~styles';
+  composes: font-family--lora from '~styles';
+  composes: font-size--1-2em from '~styles';
+  composes: font-weight--800 from '~styles';
+  composes: line-height--1-2em from '~styles';
+  composes: margin-bottom--0-5em from '~styles';
 }
 
 .description {
-  display: block;
-  text-align: left;
-  text-decoration: none;
-  color: gray;
-  font-family: Lora;
-  font-weight: 700;
-  font-size: 0.9em;
-  line-height: 1.5em;
-  margin-bottom: 0.5em;
+  composes: display--block from '~styles';
+  composes: text-align--left from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: color--gray from '~styles';
+  composes: font-family--lora from '~styles';
+  composes: font-weight--700 from '~styles';
+  composes: font-size--0-9em from '~styles';
+  composes: line-height--1-5em from '~styles';
+  composes: margin-bottom--0-5em from '~styles';
 }
 
 .info {
-  display: block;
-  text-align: left;
-  text-decoration: none;
-  color: black;
-  font-family: Lora;
-  font-weight: 700;
-  font-size: 0.7em;
-  line-height: 1.5em;
+  composes: display--block from '~styles';
+  composes: text-align--left from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: color--black from '~styles';
+  composes: font-family--lora from '~styles';
+  composes: font-weight--700 from '~styles';
+  composes: font-size--0-7em from '~styles';
+  composes: line-height--1-5em from '~styles';
 }
