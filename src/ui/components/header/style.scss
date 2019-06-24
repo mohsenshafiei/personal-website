@@ -1,26 +1,24 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 48px;
-  text-align: left;
-  padding: 1em;
-  -webkit-box-shadow: 0 4px 2px -3px #999;
-  -moz-box-shadow: 0 4px 2px -3px #999;
-  box-shadow: 0 4px 2px -3px #999;
-  z-index: 10;
+  composes: position--absolute from '~styles';
+  composes: top--0 from '~styles';
+  composes: left--0 from '~styles';
+  composes: right--0 from '~styles';
+  composes: height--48px from '~styles';
+  composes: text-align--left from '~styles';
+  composes: padding--1em from '~styles';
+  composes: box-shadow--bottom from '~styles';
+  composes: z-index--10 from '~styles';
 }
 
 .wlink {
-  margin: 0 auto;
+  composes: margin--0-auto from '~styles';
 }
 
 .link {
-  text-decoration: none;
-  color: black;
-  font-size: 0.9em;
-  font-family: Cocogoose;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  composes: text-decoration--none from '~styles';
+  composes: color--black from '~styles';
+  composes: font-size--0-9em from '~styles';
+  composes: font-family--cocogoose from '~styles';
+  composes: margin-left--0-5em from '~styles';
+  composes: margin-right--0-5em from '~styles';
 }
