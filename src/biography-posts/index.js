@@ -1,6 +1,6 @@
 export const biographies = [
   {
-    title: 'My Path to become a frontend engineer!',
+    title: 'My path to become a Front-End Engineer!',
     description: '',
     author: 'Mohsen Shafiei Tafreshi',
     time: '3 Minutes Reading',
@@ -84,7 +84,60 @@ export const biographies = [
       Anten.ir I have got a lot of offers from different companies and I chose that
       to join the Snapp tech team because Snapp was a great, big and international
       company. At Snapp, I had the chance to develop my skill to know JavaScript deeply.`,
-  ],
+    ],
+    link: '',
+  },
+  {
+    title: 'Just a normal day of my life',
+    description: '',
+    author: 'Mohsen Shafiei Tafreshi',
+    time: '3 Minutes Reading',
+    date: '25 June 2019',
+    content: [
+      `
+      Some of the developers are always coding, and some of them don't even write
+      a line in a day. There are developers who want to continue to develop software
+      with technologies from 10 years ago and on the opposite side there are
+      developers who are always updated and they learn new technologies. Let me
+      tell you about a normal day of my life. Usually, I wake up at 6:30 or 7:00
+      in the morning and after breakfast I really love to review my codes or surf
+      the internet to learn something new. I think that between hours 7 to 8
+      the productivity of mine is super high. Always I develop the most important
+      parts of the software at the earliest hours of my day.
+      `,
+      `
+      Learning new algorithms, data structures and solving algorithmic problem
+      play an important role in my life. I think that it is really fun to solve
+      these types of problem and challenge yourself to find the best solutions.
+      I am a fan of functional programming and I really love to challenge myself
+      to solve problems in a functional way.
+      `,
+      `
+      At 10:00 we have to be present at the office. During my path to the Snapp
+      office, I review Medium articles to know what is going on. After a short
+      daily meeting, I start my day by reviewing the tasks I must do. I really
+      like that to be free when I am coding and I don't really like to someone
+      always control me. I am used to planning things based on the severity of
+      the problems. Always I resolve hard challenges at first to have time to
+      learn new things during the week.
+      `,
+      `
+      From my point of view, one of the best practices that each developer can
+      do is to review solutions, code, coding style and etc of other people. I
+      really enjoy to do this and discuss with other developers to find new
+      solutions for problems. Every day, I devote a small part of my time to do
+      this. Believe me it is really fun and actually, you can learn a lot and in
+      this way, you can also find a lot of friends.
+      `,
+      `
+      After my work usually walking with my wife is what I do and after coming back
+      to our home once again really like to check my works to schedule them and
+      also write open source codes.
+      `,
+      `
+      That is it, really simple! :)
+      `,
+    ],
     link: '',
   },
 ];
