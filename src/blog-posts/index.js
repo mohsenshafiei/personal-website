@@ -26,7 +26,7 @@ export const posts = [
       `10- What experience do you have in this field?`,
       `11- What do co-workers say about you?`,
       `12- Why should we hire you?`,
-      `13- Are you a team player?`
+      `13- Are you a team player?`,
       `14- What is your philosophy towards work?`,
       `15- What have you learned from mistakes on the job?`,
       `16- Describe your management style.`,
@@ -62,7 +62,7 @@ export const posts = [
       `46- Do you enjoy working as part of a team?`,
       `47- Why do you think you deserve this job?`,
       `48- Has anything ever irritated you about people you’ve worked with?`,
-      `49- Do you have any questions for me?`
+      `49- Do you have any questions for me?`,
       `50- Describe an ideal workplace for you.`,
       `51- Tell me about a time when you didn’t follow policy or had to deviate from policy.`,
       `52- Do you lie?`,
