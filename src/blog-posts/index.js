@@ -131,7 +131,7 @@ export const posts = [
       `113- Tell me about your educational background?`,
       `114- What do you do in leisure?`,
       `115- What is human resource management?`,
-      `116- How do you define empowerment?`
+      `116- How do you define empowerment?`,
       `117- How do you define arrogance? Are you arrogant?`,
       `118- Rate yourself on a scale of 10.`,
       `119- How do you handle repetitive tasks?`,
