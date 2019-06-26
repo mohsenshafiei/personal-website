@@ -28,6 +28,7 @@
   composes: font-size--1-3em from '~styles';
   composes: font-weight--600 from '~styles';
   composes: line-height--1-5em from '~styles';
+  composes: margin-top--1-5em from '~styles';
   composes: margin-bottom--0-5em from '~styles';
 }
 
@@ -40,6 +41,7 @@
   composes: font-size--1em from '~styles';
   composes: font-weight--600 from '~styles';
   composes: line-height--1-3em from '~styles';
+  composes: margin-top--1-5em from '~styles';
   composes: margin-bottom--0-5em from '~styles';
 }
 
