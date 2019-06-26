@@ -18,7 +18,7 @@ export const posts = [
       `2- Why do you want to work for this company?`,
       `3- Do you consider yourself successful?`,
       `4- Are you willing to travel?`,
-      `5- What are your salary expectation`,
+      `5- What are your salary expectation?`,
       `6- What would you consider your greatest strengths & weakness?`,
       `7- What motivates you?`,
       `8- Tell me about your dream job.`,

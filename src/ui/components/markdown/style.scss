@@ -6,7 +6,7 @@
 .title {
   composes: font-family--lora from '~styles';
   composes: font-weight--900 from '~styles';
-  composes: font-size--1-5em from '~styles';
+  composes: font-size--1-8em from '~styles';
   composes: line-height--1-3em from '~styles';
   composes: margin-bottom--0-5em from '~styles';
 }
@@ -19,9 +19,44 @@
   composes: font-weight--900 from '~styles';
 }
 
-.content {
+.header1 {
   composes: text-align--left from '~styles';
   composes: display--block from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: color--black from '~styles';
+  composes: font-family--lora from '~styles';
+  composes: font-size--1-3em from '~styles';
+  composes: font-weight--600 from '~styles';
+  composes: line-height--1-5em from '~styles';
+  composes: margin-bottom--0-5em from '~styles';
+}
+
+.header2 {
+  composes: text-align--left from '~styles';
+  composes: display--block from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: color--black from '~styles';
+  composes: font-family--lora from '~styles';
+  composes: font-size--1em from '~styles';
+  composes: font-weight--600 from '~styles';
+  composes: line-height--1-3em from '~styles';
+  composes: margin-bottom--0-5em from '~styles';
+}
+
+.paragraph {
+  composes: text-align--left from '~styles';
+  composes: display--block from '~styles';
+  composes: text-decoration--none from '~styles';
+  composes: color--black from '~styles';
+  composes: font-family--lora from '~styles';
+  composes: font-size--1-1em from '~styles';
+  composes: font-weight--600 from '~styles';
+  composes: line-height--1-5em from '~styles';
+  composes: margin-bottom--0-5em from '~styles';
+}
+
+.list {
+  composes: text-align--left from '~styles';
   composes: text-decoration--none from '~styles';
   composes: color--black from '~styles';
   composes: font-family--lora from '~styles';
