@@ -16,7 +16,24 @@ export const Markdown: React.FunctionComponent<Props> = props => {
       <h4 className={style.info}>{props.time} | {props.date}</h4>
       {
         props.content.map((paragraph: string, index: number) => {
-          return (<p className={style.content} key={index}>{paragraph}</p>);
+          const paragraphTrimmed = paragraph.trim();
+          switch (paragraph.trim().charAt(0)) {
+            case '#': {
+              return (<h1 className={style.header1} key={index}>{paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1)}</h1>);
+            }
+            case '##': {
+              return (<h2 className={style.header2} key={index}>{paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1)}</h2>);
+            }
+            case '-': {
+              return (<li className={style.list} key={index}>{paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1)}</li>);
+            }
+            case '*': {
+              return (<li className={style.list} key={index}>{paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1)}</li>);
+            }
+            default: {
+              return (<p className={style.paragraph} key={index}>{paragraph}</p>);
+            }
+          }
         })
       }
     </div>
