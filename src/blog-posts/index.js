@@ -3,5 +3,5 @@ import salaryNegotiation from './salary-negotiation';
 
 export const posts = [
   hrInterviewQuestion,
-  salaryNegotiation
+  salaryNegotiation,
 ];
