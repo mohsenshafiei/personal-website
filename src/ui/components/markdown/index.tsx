@@ -17,7 +17,7 @@ export const Markdown: React.FunctionComponent<Props> = props => {
       {
         props.content.map((paragraph: string, index: number) => {
           const paragraphTrimmed = paragraph.trim();
-          switch (paragraph.trim().charAt(0)) {
+          switch (paragraphTrimmed.substr(0, paragraphTrimmed.indexOf(" "))) {
             case '#': {
               return (<h1 className={style.header1} key={index}>{paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1)}</h1>);
             }

@@ -54,7 +54,7 @@ export default {
     `- I  really do want to do an extraordinary job, here is what I have done, and in
     the next round I will push the team in this way, I want to do an extraordinary job over next six months`,
     `- Here is what I think that makes me a good developer`,
-    `- Always share the knowledge with your boss, close to the loop technique`
+    `- Always share the knowledge with your boss, close to the loop technique`,
   ],
   link: '',
 };
