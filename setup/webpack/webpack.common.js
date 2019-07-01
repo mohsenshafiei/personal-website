@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const pathTo = require('../util');
@@ -68,6 +69,9 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new CopyPlugin([
+      { from: pathTo.publicDir, to: pathTo.dist },
+    ]),
     new HtmlWebpackPlugin({
       title: 'I\'m Mohsen Shafiei',
       filename: 'index.html',
