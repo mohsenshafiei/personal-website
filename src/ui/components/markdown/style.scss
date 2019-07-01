@@ -69,18 +69,18 @@
 }
 
 .tbrow {
-  white-space: nowrap;
-  width: 100%;
-  display: block;
+  composes: white-space--nowrap from '~styles';
+  composes: width--100 from '~styles';
+  composes: display--block from '~styles';
   margin: 1em 0.5em 1em 0.5em;
 }
 
 .tdata {
-  text-align: left;
-  display: inline-block;
-  white-space: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  composes: text-align--left from '~styles';
+  composes: display--inline-block from '~styles';
+  composes: white-space--normal from '~styles';
+  composes: overflow--hidden from '~styles';
+  composes: text-overflow--ellipsis from '~styles';
   composes: text-decoration--none from '~styles';
   composes: color--black from '~styles';
   composes: font-family--lora from '~styles';
@@ -91,11 +91,11 @@
 }
 
 .trow {
-  text-align: left;
-  display: inline-block;
-  white-space: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  composes: text-align--left from '~styles';
+  composes: display--inline-block from '~styles';
+  composes: white-space--normal from '~styles';
+  composes: overflow--hidden from '~styles';
+  composes: text-overflow--ellipsis from '~styles';
   composes: text-decoration--none from '~styles';
   composes: color--black from '~styles';
   composes: font-family--lora from '~styles';
@@ -106,12 +106,12 @@
 }
 
 .thead {
-  margin-top: 2em;
-  text-align: left;
-  display: inline-block;
-  white-space: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  composes: margin-top--1-5em from '~styles';
+  composes: text-align--left from '~styles';
+  composes: display--inline-block from '~styles';
+  composes: white-space--normal from '~styles';
+  composes: overflow--hidden from '~styles';
+  composes: text-overflow--ellipsis from '~styles';
   composes: text-decoration--none from '~styles';
   composes: color-violate from '~styles';
   composes: font-family--lora from '~styles';
