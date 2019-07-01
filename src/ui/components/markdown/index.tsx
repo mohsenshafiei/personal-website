@@ -30,6 +30,42 @@ export const Markdown: React.FunctionComponent<Props> = props => {
             case '*': {
               return (<li className={style.list} key={index}>{paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1)}</li>);
             }
+            case 'td': {
+              const tableData = paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1).split(' * ');
+              return (
+                <div className={style.tbrow}>
+                  {
+                    tableData.map(( data : string, index: number ) => {
+                      return (<span className={style.tdata} key={index} style={{width: `${100/tableData.length}%`}}>{data}</span>);
+                    })
+                  }
+                </div>
+              );
+            }
+            case 'tr': {
+              const tableData = paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1).split(' * ');
+              return (
+                <div className={style.tbrow}>
+                  {
+                    tableData.map(( data : string, index: number ) => {
+                      return (<span className={style.trow} key={index} style={{width: `${100/tableData.length}%`}}>{data}</span>);
+                    })
+                  }
+                </div>
+              );
+            }
+            case 'th': {
+              const tableData = paragraphTrimmed.substr(paragraphTrimmed.indexOf(" ") + 1).split(' * ');
+              return (
+                <div className={style.tbrow}>
+                  {
+                    tableData.map(( data : string, index: number ) => {
+                      return (<span className={style.thead} key={index} style={{width: `${100/tableData.length}%`}}>{data}</span>);
+                    })
+                  }
+                </div>
+              );
+            }
             default: {
               return (<p className={style.paragraph} key={index}>{paragraph}</p>);
             }
