@@ -2,15 +2,68 @@
 <html lang="<%= htmlWebpackPlugin.options.languageCode %>">
 
 <head>
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta ="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Mohsen Shafiei">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TitleImage" content="src/icons/icon-152x152.png">
+  <meta name="msapplication-TitleColor" content="black">
+  <meta name="theme-color" content="#fff">
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
 </head>
 
-<body>
+<body ontouchstart=””>
+  <noscript>
+   <style>
+     .nojavascript {
+       position: fixed;
+       background-color: white;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+     }
+
+     .nojavascript p {
+       width: 100%;
+       text-align: center;
+       font-family: Tahoma;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+     }
+   </style>
+   <div class="nojavascript">
+     <p>Please Enable JavaScript on Your Machine</p>
+   </div>
+ </noscript>
+
   <div id="app"></div>
 </body>
 
