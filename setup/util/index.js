@@ -11,5 +11,6 @@ module.exports = {
   swSrc: path.resolve(projectRoot, 'src/services/service-worker/main.ts'),
   // Directories
   srcDir: path.resolve(projectRoot, 'src'),
+  publicDir: path.resolve(projectRoot, 'public'),
   distDir: path.resolve(projectRoot, 'dist'),
 };
