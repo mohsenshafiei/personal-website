@@ -2,7 +2,7 @@ export default {
   title: 'CSS Units',
   description: 'A complete source of CSS units',
   author: 'Mohsen Shafiei Tafreshi',
-  time: '12 Minutes Reading',
+  time: '2 Minutes Reading',
   date: '1 July 2019',
   content: [
     `
