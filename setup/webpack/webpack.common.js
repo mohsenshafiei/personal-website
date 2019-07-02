@@ -81,7 +81,12 @@ module.exports = {
       favicon: pathTo.favIconSrc,
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
-        description: 'Mohsen Shafiei Tafreshi Official Website',
+        description: `
+          Mohsen Shafiei Tafreshi Official Website.
+          Mohsen Shafiei is a frontend engineer.
+          webpack, javascript, frontend, frontend developer,
+          frontend engineer, css, html, frontend engineer.
+        `,
       },
     }),
     new ForkTsCheckerWebpackPlugin({
