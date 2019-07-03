@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const pathTo = require('../util');
@@ -72,6 +73,9 @@ module.exports = {
     new CopyPlugin([
       { from: pathTo.publicDir, to: pathTo.dist },
     ]),
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+    }),
     new HtmlWebpackPlugin({
       title: 'I\'m Mohsen Shafiei',
       filename: 'index.html',
