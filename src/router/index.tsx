@@ -3,10 +3,6 @@ import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { PrivateRoute } from './private-route';
 import { Home } from 'ui/pages/home';
-import { Blog } from 'ui/pages/blog';
-import { Post } from 'ui/pages/post';
-import { Story } from 'ui/pages/story';
-import { Biography } from 'ui/pages/biography';
 import { NotFound } from 'ui/pages/not-found';
 import { Header } from 'ui/components/header';
 
@@ -20,26 +16,6 @@ const routes: RouteObject[] = [
   {
     path: '/',
     component: Home,
-    isPrivate: false,
-  },
-  {
-    path: '/blog',
-    component: Blog,
-    isPrivate: false,
-  },
-  {
-    path: '/biography',
-    component: Biography,
-    isPrivate: false,
-  },
-  {
-    path: '/post',
-    component: Post,
-    isPrivate: false,
-  },
-  {
-    path: '/story',
-    component: Story,
     isPrivate: false,
   },
   {
