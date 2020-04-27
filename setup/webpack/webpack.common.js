@@ -3,6 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const WebpackShower = require('webpack-shower');
 const pathTo = require('../util');
 
 module.exports = {
@@ -11,6 +12,9 @@ module.exports = {
     filename: '[name].[hash].js',
     path: pathTo.distDir,
     publicPath: '/',
+  },
+  stats: {
+    all: false
   },
   module: {
     rules: [
@@ -69,6 +73,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new WebpackShower(),
     new webpack.HotModuleReplacementPlugin(),
     new CopyPlugin([
       { from: pathTo.publicDir, to: pathTo.dist },
