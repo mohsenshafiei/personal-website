@@ -91,10 +91,28 @@ module.exports = {
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
         description: `
-          Mohsen Shafiei Tafreshi Official Website.
-          Mohsen Shafiei is a frontend engineer.
-          webpack, javascript, frontend, frontend developer,
-          frontend engineer, css, html, frontend engineer.
+          This is my (Mohsen Shafiei) official website.
+          I am a frontend engineer. I am from Iran and I live in Singapore.
+          I really like to contribute on open source project and build tools for
+          other developers to make frontend developement faster and more effective.
+
+          My skills are:
+            Backend:
+              NodeJS, Python, Golang
+            Frontend:
+              Javascript, HTML, CSS
+            Frameworks:
+              React, Vue, Express, Django
+            Web tooling:
+              Webpack, Rollup, Gulp, Grunt and etc
+            CI / CD:
+              Jenkins, Travis, Docker, Kubernetes and etc
+            Familiar with:
+              Functional Programming, Design Patterns, System Design, Platform Design and etc
+
+          NOTE - Mohsen Shafiei Official Website.
+          NOTE - Mohsen Shafiei is a frontend engineer.
+          NOTE - Mohsen Shafiei works at Shopee.sg.
         `,
       },
     }),
