@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as style from './style.scss';
 import { NavLink } from 'react-router-dom';
 
-export const NotFound: React.SFC<> = () => {
+const NotFound: React.SFC<> = () => {
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
@@ -13,3 +13,5 @@ export const NotFound: React.SFC<> = () => {
     </div>
   );
 }
+
+export default NotFound;

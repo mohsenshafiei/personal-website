@@ -1,9 +1,7 @@
 import * as React from 'react';
-import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { PrivateRoute } from './private-route';
+import { lazy, Suspense } from 'react';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import { Home } from 'ui/pages/home';
-import { NotFound } from 'ui/pages/not-found';
 import { Header } from 'ui/components/header';
 
 interface RouteObject {
@@ -20,52 +18,31 @@ const routes: RouteObject[] = [
   },
   {
     path: '*',
-    component: NotFound,
+    component: lazy(() => import('ui/pages/not-found')),
     isPrivate: false,
   },
 ];
 
-interface RouterProps {
-  isAuthenticated: boolean;
-}
-
-export class RouterDumb extends React.Component<RouterProps, {}> {
-  constructor(props: RouterProps) {
-    super(props);
-  }
-
-  render() {
-    return (
+export const Router: React.SFC<> = () => {
+  return (
+    <Suspense fallback={<></>}>
       <HashRouter>
         <Header />
         <Switch>
           {
             routes.map((route, index) => {
-              if (route.isPrivate) {
-                return <PrivateRoute exact key={index} path={route.path} component={route.component} />
-              }
               return (
                 <Route
                   exact
                   key={index}
                   path={route.path}
-                  render={() => (
-                    (this.props.isAuthenticated && route.path !== '/logout') ? <Redirect to="/ride-request" /> : (<route.component />)
-                  )}
+                  render={() => <route.component />}
                 />
               )
             })
           }
         </Switch>
       </HashRouter>
-    );
-  }
+    </Suspense>
+  );
 }
-
-const mapStateToProps = () => ({
-  isAuthenticated: false,
-});
-
-const mapDispatchToProps = () => ({});
-
-export const Router = connect(mapStateToProps, mapDispatchToProps)(RouterDumb);
