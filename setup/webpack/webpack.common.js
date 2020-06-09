@@ -126,7 +126,7 @@ module.exports = {
       'node_modules',
       pathTo.srcDir,
     ],
-    extensions: ['.ts', '.tsx', '.js', '.scss'],
+    extensions: ['.ts', '.tsx', '.js', '.scss', '.ttf', '.woff2', '.woff'],
   },
   target: 'web',
 }

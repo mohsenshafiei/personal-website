@@ -18,8 +18,9 @@ module.exports = merge(common, {
     new InjectManifest({
       swDest: 'service-worker.js',
       importWorkboxFrom: 'local',
-      importsDirectory: 'wb-assets',
+      importsDirectory: './wb-assets',
       swSrc: pathTo.swSrc,
+      exclude: [/swagger-ui/]
     }),
   ],
 });
