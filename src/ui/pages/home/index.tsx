@@ -2,10 +2,12 @@ import * as React from 'react';
 import * as style from './style.scss';
 const cv = require('assets/cv/cv.pdf');
 const avatar = require('assets/images/avatar.jpeg');
+import { Maze } from 'ui/components/maze';
 
 export const Home: React.SFC<> = () => {
   return (
     <div className={style.container}>
+      <Maze />
       <div className={style.wrapper}>
         <img className={style.avatar} src={avatar} alt="avatar"/>
         <h1 className={style.title}>Mohsen Shafiei Tafreshi</h1>

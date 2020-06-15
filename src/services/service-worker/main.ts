@@ -34,12 +34,11 @@ const handleJsFiles = () => {
 };
 
 const handleHtmlFiles = () => {
-  //cache css files from third paty domains with 7 days expiration
   //@ts-ignore
   workbox.routing.registerRoute(
     new RegExp(".+\\.html$"),
     //@ts-ignore
-    workbox.strategies.staleWhileRevalidate()
+    new workbox.strategies.StaleWhileRevalidate({ cacheName: "html-cache-files"})
   );
 };
 
@@ -107,7 +106,7 @@ const handleJsonFiles = () => {
   workbox.routing.registerRoute(
     new RegExp(".+\\.json$"),
     //@ts-ignore
-    workbox.strategies.staleWhileRevalidate()
+    workbox.strategies.StaleWhileRevalidate()
   );
 };
 

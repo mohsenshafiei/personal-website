@@ -16,6 +16,7 @@
   composes: height--12em from '~styles';
   composes: margin-top--4em from '~styles';
   composes: margin-bottom--2em from '~styles';
+  border: 5px solid white;
 }
 
 .wrapper {
@@ -31,12 +32,16 @@
   composes: font-size--2em from '~styles';
   composes: font-family--cocogoose from '~styles';
   composes: margin-bottom--0-5em from '~styles';
+  background-color: white;
+  padding: 8px 0px;
   @media (max-width: 450px) {
     font-size: 1.2em;
   }
 }
 
 .role {
+  background-color: yellow;
+  padding: 8px 0;
   composes: color--black from '~styles';
   composes: font-family--grotters from '~styles';
   @media (max-width: 450px) {
@@ -51,10 +56,12 @@
 .link {
   composes: margin--0-0-3em from '~styles';
   composes: text-decoration--none from '~styles';
-  composes: color--gray from '~styles';
+  composes: color--black from '~styles';
   composes: font-size--0-9em from '~styles';
   composes: font-family--cocogoose from '~styles';
   composes: font-weight--300 from '~styles';
+  background-color: white;
+  padding: 8px 0px;
   &:hover {
     color: black;
   }
