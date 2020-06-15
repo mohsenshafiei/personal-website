@@ -106,7 +106,7 @@ const handleJsonFiles = () => {
   workbox.routing.registerRoute(
     new RegExp(".+\\.json$"),
     //@ts-ignore
-    workbox.strategies.StaleWhileRevalidate()
+    new workbox.strategies.StaleWhileRevalidate()
   );
 };
 
