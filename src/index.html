@@ -1,160 +1,327 @@
 <!DOCTYPE html>
 <html lang="<%= htmlWebpackPlugin.options.languageCode %>">
+  <head>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="prerender" href="assets/apple-icon-57x57.png" />
+    <link rel="prerender" href="assets/apple-icon-60x60.png" />
+    <link rel="prerender" href="assets/apple-icon-72x72.png" />
+    <link rel="prerender" href="assets/apple-icon-76x76.png" />
+    <link rel="prerender" ref="assets/apple-icon-114x114.png" />
+    <link rel="prerender" ref="assets/apple-icon-120x120.png" />
+    <link rel="prerender" ref="assets/apple-icon-144x144.png" />
+    <link rel="prerender" ref="assets/apple-icon-152x152.png" />
+    <link rel="prerender" ref="assets/apple-icon-180x180.png" />
+    <link rel="prerender" href="assets/android-icon-192x192.png" />
+    <link rel="prerender" href="assets/favicon-32x32.png" />
+    <link rel="prerender" href="assets/favicon-96x96.png" />
+    <link rel="prerender" href="assets/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/favicon-32x32.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Mohsen Shafiei" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="msapplication-TitleImage"
+      content="src/icons/icon-152x152.png"
+    />
+    <meta name="msapplication-TitleColor" content="black" />
+    <meta name="theme-color" content="#fff" />
+    <meta property="og:url" content="www.mohsenshafiei.com" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Mohsen Shafiei Tafreshi" />
+    <meta
+      property="og:description"
+      content="Mohsen Shafiei personal page, Mohsen is a frontend engineer from Tehran, Iran"
+    />
+    <meta property="og:image" content="assets/apple-icon-76x76.png" />
+    <meta
+      name="twitter:card"
+      content="Mohsen Shafiei, Mohsen Shafiei Tafreshi"
+    />
+    <meta name="twitter:site" content="@_mosen_" />
+    <meta name="twitter:creator" content="@_mosen_" />
+    <meta name="twitter:image" content=“src/icons/icon-152x152.png“/>
+    <meta property="mohsen_shafiei:location:latitude" content="35.7732629" />
+    <meta property="mohsen_shafiei:location:longitude" content="51.418451" />
+    <meta property="mohsen_shafiei:locality" content="Singapore, Singapore" />
+    <meta property="mohsen_shafiei:region" content="Singapore, Singapore" />
+    <meta property="mohsen_shafiei:postal_code" content="248449" />
 
-<head>
+    <link
+      href="assets/splashscreens/iphone5_splash.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+      rel="prefetch"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/iphone6_splash.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/iphoneplus_splash.png"
+      media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/iphonex_splash.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/iphonexr_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/iphonexsmax_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/ipad_splash.png"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/ipadpro1_splash.png"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/ipadpro3_splash.png"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+      rel="prerender"
+      as="image"
+    />
+    <link
+      href="assets/splashscreens/ipadpro2_splash.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+      rel="prerender"
+      as="image"
+    />
 
-  <link rel="manifest" href="/manifest.json">
-  <link rel="prerender" href="assets/apple-icon-57x57.png">
-  <link rel="prerender" href="assets/apple-icon-60x60.png">
-  <link rel="prerender" href="assets/apple-icon-72x72.png">
-  <link rel="prerender" href="assets/apple-icon-76x76.png">
-  <link rel="prerender" ref="assets/apple-icon-114x114.png">
-  <link rel="prerender" ref="assets/apple-icon-120x120.png">
-  <link rel="prerender" ref="assets/apple-icon-144x144.png">
-  <link rel="prerender" ref="assets/apple-icon-152x152.png">
-  <link rel="prerender" ref="assets/apple-icon-180x180.png">
-  <link rel="prerender" href="assets/android-icon-192x192.png">
-  <link rel="prerender" href="assets/favicon-32x32.png">
-  <link rel="prerender" href="assets/favicon-96x96.png">
-  <link rel="prerender" href="assets/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-32x32.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Mohsen Shafiei">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="msapplication-TitleImage" content="src/icons/icon-152x152.png">
-  <meta name="msapplication-TitleColor" content="black">
-  <meta name="theme-color" content="#fff">
-  <meta property="og:url" content="www.mohsenshafiei.com"/>
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Mohsen Shafiei Tafreshi"/>
-  <meta property="og:description" content="Mohsen Shafiei personal page, Mohsen is a frontend engineer from Tehran, Iran" />
-  <meta property="og:image" content="assets/apple-icon-76x76.png"/>
-  <meta name="twitter:card" content="Mohsen Shafiei, Mohsen Shafiei Tafreshi"/>
-  <meta name="twitter:site" content="@_mosen_"/>
-  <meta name="twitter:creator" content="@_mosen_"/>
-  <meta name="twitter:image" content=“src/icons/icon-152x152.png“/>
-  <meta property="mohsen_shafiei:location:latitude" content="35.7732629"/>
-  <meta property="mohsen_shafiei:location:longitude" content="51.418451"/>
-  <meta property="mohsen_shafiei:locality" content="Singapore, Singapore"/>
-  <meta property="mohsen_shafiei:region" content="Singapore, Singapore"/>
-  <meta property="mohsen_shafiei:postal_code" content="248449"/>
+    <link
+      href="assets/splashscreens/iphone5_splash.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/iphone6_splash.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/iphoneplus_splash.png"
+      media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/iphonex_splash.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/iphonexr_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/iphonexsmax_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/ipad_splash.png"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/ipadpro1_splash.png"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/ipadpro3_splash.png"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="assets/splashscreens/ipadpro2_splash.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-168928370-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-168928370-1");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
 
-  <link href="assets/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="prefetch" as="image" />
-  <link href="assets/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="prerender" as="image" />
-  <link href="assets/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="prerender" as="image" />
+  <body ontouchstart="””">
+    <noscript>
+      <style>
+        .nojavascript {
+          position: fixed;
+          background-color: white;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
 
-  <link href="assets/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-  <link href="assets/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168928370-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-168928370-1');
-  </script>
-
-  <title>
-    <%= htmlWebpackPlugin.options.title %>
-  </title>
-</head>
-
-<body ontouchstart=””>
-  <noscript>
-     <style>
-       .nojavascript {
-         position: fixed;
-         background-color: white;
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-       }
-
-       .nojavascript p {
-         width: 100%;
-         text-align: center;
-         font-family: Tahoma;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         -webkit-transform: translate(-50%, -50%);
-         -moz-transform: translate(-50%, -50%);
-         -ms-transform: translate(-50%, -50%);
-         -o-transform: translate(-50%, -50%);
-         transform: translate(-50%, -50%);
-       }
-     </style>
-     <div class="nojavascript">
-       <p>Please Enable JavaScript on Your Machine</p>
-     </div>
-   </noscript>
-  <div id="app"></div>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "Profile",
-      "name": "Mohsen Shafiei",
-      "url": "https://mohsenshafiei.com/",
-      "logo": "https://mohsenshafiei.com/assets/favicon-96x96.png",
-      "telephone": "+6584358541",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "River Valley, Singapore",
-        "addressLocality": "Singapore",
-        "postalCode": "248449",
-        "addressCountry": "Singapore"
-      },
-      "sameAs" : [
-        "https://twitter.com/_mosen_",
-        "https://www.linkedin.com/in/mohsen-shafiei-tafreshi-7250847b/",
-        "https://www.instagram.com/mohsen_shafiei_t/",
-        "https://github.com/mohsenshafiei",
-      ]
-    }
-  </script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function () {
-        navigator.serviceWorker
-          .register("service-worker.js")
-          .then(console.log('service-worker activated'))
-          .catch(console.error);
-      });
-    }
-  </script>
-</body>
+        .nojavascript p {
+          width: 100%;
+          text-align: center;
+          font-family: Tahoma;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <div class="nojavascript">
+        <p>Please Enable JavaScript on Your Machine</p>
+      </div>
+    </noscript>
+    <div id="app"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "Profile",
+        "name": "Mohsen Shafiei",
+        "url": "https://mohsenshafiei.com/",
+        "logo": "https://mohsenshafiei.com/assets/favicon-96x96.png",
+        "telephone": "+6584358541",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "River Valley, Singapore",
+          "addressLocality": "Singapore",
+          "postalCode": "248449",
+          "addressCountry": "Singapore"
+        },
+        "sameAs": [
+          "https://twitter.com/_mosen_",
+          "https://www.linkedin.com/in/mohsen-shafiei-tafreshi-7250847b/",
+          "https://www.instagram.com/mohsen_shafiei_t/",
+          "https://github.com/mohsenshafiei"
+        ]
+      }
+    </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        caches.keys().then(function (cacheNames) {
+          cacheNames.forEach(function (cacheName) {
+            caches.delete(cacheName);
+          });
+        });
+      }
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then(console.log("service-worker activated"))
+            .catch(console.error);
+        });
+      }
+    </script>
+  </body>
 </html>

@@ -17,7 +17,7 @@ html {
 }
 
 * {
-  font-family: 'sans-serif';
+  font-family: "sans-serif";
 }
 
 body {
@@ -25,6 +25,7 @@ body {
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  min-width: 320px !important;
 }
 
 body,
