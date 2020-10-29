@@ -1,7 +1,12 @@
 const CANVAS_SIZE = [window.innerWidth, window.innerHeight];
 const SCALE = 15;
 const SPEED = 40;
-const DIRECTIONS = [[-1, 0], [0, 1], [1, 0], [0, -1]]
+const DIRECTIONS = [
+  [-1, 0],
+  [0, 1],
+  [1, 0],
+  [0, -1],
+];
 const COLOR_NAMES = [
   "#92dbff",
   "#9696ff",
@@ -16,12 +21,6 @@ const COLOR_NAMES = [
   "#f9caa7",
   "#83d0c9",
   "#88d8b0",
-]
+];
 
-export {
-  CANVAS_SIZE,
-  SCALE,
-  SPEED,
-  DIRECTIONS,
-  COLOR_NAMES,
-};
+export { CANVAS_SIZE, SCALE, SPEED, DIRECTIONS, COLOR_NAMES };

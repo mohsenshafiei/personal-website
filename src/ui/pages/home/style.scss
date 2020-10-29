@@ -1,68 +1,161 @@
 .container {
-  composes: position--absolute from '~styles';
-  composes: font-size--1em from '~styles';
-  composes: top--0 from '~styles';
-  composes: left--0 from '~styles';
-  composes: right--0 from '~styles';
-  composes: bottom--0 from '~styles';
-  composes: padding--1em from '~styles';
-  composes: overflow--hidden from '~styles';
-  composes: min-width--320px from '~styles';
+  composes: position--absolute from "~styles";
+  composes: font-size--1em from "~styles";
+  composes: top--0 from "~styles";
+  composes: left--0 from "~styles";
+  composes: right--0 from "~styles";
+  composes: bottom--0 from "~styles";
+  composes: padding--1em from "~styles";
+  composes: overflow--hidden from "~styles";
+  composes: min-width--320px from "~styles";
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+.container:active {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none; /* IE 6-9 */
+}
+
+.circleWrapper {
+  border: 4px dashed blue;
+  position: relative;
+}
+.circle {
+  border: 5px dashed black;
+  margin: 0 auto;
+  border-radius: 100%;
+  height: 18em;
+  width: 18em;
+  position: relative;
+  text-align: center;
+  margin-bottom: 32px;
+  background-color: yellow;
+  animation: spin 60s linear infinite;
+  background-clip: content-box;
+  background: linear-gradient(to right, #cccccc 0%, #cccccc 100%);
+}
+
+.container:active .circle {
+  animation: spin 10s linear infinite;
+  background: linear-gradient(
+    to right,
+    #92dbff 0%,
+    #ff9793 10%,
+    #f0aeff 20%,
+    #acf49d 30%,
+    #6ff3e4 40%,
+    #f6abb6 50%,
+    #dec3c3 70%,
+    #f9caa7 80%,
+    #83d0c9 90%,
+    #88d8b0 100%
+  );
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 .avatar {
-  composes: border-radius--50 from '~styles';
-  composes: width--12em from '~styles';
-  composes: height--12em from '~styles';
-  composes: margin-top--4em from '~styles';
-  composes: margin-bottom--2em from '~styles';
-  border: 5px solid white;
+  composes: border-radius--50 from "~styles";
+  width: 16em;
+  height: 16em;
+  border: 15px solid white;
+  position: absolute;
+  transform: translate(-50%, -118.5%);
 }
 
 .wrapper {
-  composes: position--absolute from '~styles';
-  composes: top--50 from '~styles';
-  composes: left--50 from '~styles';
-  composes: transform--translate-50-50 from '~styles';
-  composes: text-align--center from '~styles';
+  composes: position--absolute from "~styles";
+  composes: text-align--center from "~styles";
+  composes: left--0 from "~styles";
+  composes: right--0 from "~styles";
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .title {
-  composes: color--black from '~styles';
-  composes: font-size--2em from '~styles';
-  composes: font-family--cocogoose from '~styles';
-  composes: margin-bottom--0-5em from '~styles';
-  background-color: white;
+  composes: color--black from "~styles";
+  composes: font-size--3em from "~styles";
+  composes: font-family--cocogoose from "~styles";
+  composes: margin-bottom--0-5em from "~styles";
+  background-color: transparent;
   padding: 8px 0px;
   @media (max-width: 450px) {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 }
 
 .role {
   background-color: yellow;
+  border-radius: 25px;
   padding: 8px 0;
-  composes: color--black from '~styles';
-  composes: font-family--grotters from '~styles';
+  width: 320px;
+  margin: 0 auto;
+  composes: color--black from "~styles";
+  composes: font-family--grotters from "~styles";
   @media (max-width: 450px) {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 }
 
 .wlink {
-  composes: margin-top--5em from '~styles';
+  composes: margin-top--1-5em from "~styles";
+}
+
+.container:active .link {
+  &:nth-child(1) {
+    background-color: #92dbff;
+  }
+  &:nth-child(2) {
+    background-color: #ff9793;
+  }
+  &:nth-child(3) {
+    background-color: #f0aeff;
+  }
 }
 
 .link {
-  composes: margin--0-0-3em from '~styles';
-  composes: text-decoration--none from '~styles';
-  composes: color--black from '~styles';
-  composes: font-size--0-9em from '~styles';
-  composes: font-family--cocogoose from '~styles';
-  composes: font-weight--300 from '~styles';
-  background-color: white;
-  padding: 8px 0px;
+  composes: margin--0-0-3em from "~styles";
+  composes: text-decoration--none from "~styles";
+  composes: color--black from "~styles";
+  composes: font-size--1-2em from "~styles";
+  composes: font-family--cocogoose from "~styles";
+  composes: font-weight--300 from "~styles";
+  min-width: 56px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  &:nth-child(1) {
+    background-color: #cccccc;
+  }
+  &:nth-child(2) {
+    background-color: #cccccc;
+  }
+  &:nth-child(3) {
+    background-color: #cccccc;
+  }
+  &:nth-child(4) {
+    background-color: #cccccc;
+  }
+  &:nth-child(5) {
+    background-color: #cccccc;
+  }
   &:hover {
     color: black;
+  }
+  @media (max-width: 450px) {
+    font-size: 1em;
+    padding: 8px;
+    margin: 0 3px;
   }
 }

@@ -20,16 +20,7 @@ const handleJsFiles = () => {
   workbox.routing.registerRoute(
     new RegExp(".+\\.js$"),
     //@ts-ignore
-    new workbox.strategies.CacheFirst({
-      cacheName: "js-cache-files",
-      plugins: [
-        //@ts-ignore
-        new workbox.expiration.Plugin({
-          maxEntries: 60,
-          maxAgeSeconds: 7 * 24 * 60 * 60 //
-        })
-      ]
-    })
+    new workbox.strategies.NetworkOnly()
   );
 };
 
@@ -38,7 +29,7 @@ const handleHtmlFiles = () => {
   workbox.routing.registerRoute(
     new RegExp(".+\\.html$"),
     //@ts-ignore
-    new workbox.strategies.StaleWhileRevalidate({ cacheName: "html-cache-files"})
+    new workbox.strategies.NetworkOnly()
   );
 };
 
@@ -48,16 +39,7 @@ const handleCssFiles = () => {
   workbox.routing.registerRoute(
     new RegExp(".+\\.css$"),
     //@ts-ignore
-    new workbox.strategies.CacheFirst({
-      cacheName: "css-cache-files",
-      plugins: [
-        //@ts-ignore
-        new workbox.expiration.Plugin({
-          maxEntries: 60,
-          maxAgeSeconds: 7 * 24 * 60 * 60 //
-        })
-      ]
-    })
+    new workbox.strategies.NetworkOnly()
   );
 };
 
@@ -73,9 +55,9 @@ const handleFontFiles = () => {
         //@ts-ignore
         new workbox.expiration.Plugin({
           maxEntries: 60,
-          maxAgeSeconds: 7 * 24 * 60 * 60 //
-        })
-      ]
+          maxAgeSeconds: 7 * 24 * 60 * 60, //
+        }),
+      ],
     })
   );
 };
@@ -92,9 +74,9 @@ const handlePngfiles = () => {
         //@ts-ignore
         new workbox.expiration.Plugin({
           maxEntries: 60,
-          maxAgeSeconds: 7 * 24 * 60 * 60 //
-        })
-      ]
+          maxAgeSeconds: 7 * 24 * 60 * 60, //
+        }),
+      ],
     })
   );
 };

@@ -127,7 +127,7 @@ export const Maze = () => {
     if (c === 1) {
       context.beginPath();
       context.lineCap = "round";
-      context.lineWidth = 0.1;
+      context.lineWidth = 0.2;
       context.moveTo(pathing[counter - 1][0] + 1, pathing[counter - 1][1] + 1);
       context.lineTo(pathing[counter][0] + 1, pathing[counter][1] + 1);
       context.strokeStyle = random(color);
@@ -161,7 +161,7 @@ export const Maze = () => {
     setSpeed(SPEED);
   };
 
-  useEffect(() => { startGame() }, [])
+  useEffect(() => { setTimeout(() => startGame(), 3000) }, [])
 
   return (
     <div className={style.container}>
